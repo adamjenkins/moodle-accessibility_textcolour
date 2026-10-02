@@ -9,9 +9,7 @@ jobs:
 
   ci:
     name: CI
-    uses: adamjenkins/moodle-local_accessibility/.github/workflows/ci.yml@master
-    with:
-      widget-textcolour-branch: ${{ github.ref }}
+    uses: ./.github/workflows/moodle-ci.yml
 
   get-version:
     name: Get version info
